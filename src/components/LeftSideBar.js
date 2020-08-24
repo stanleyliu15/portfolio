@@ -5,9 +5,11 @@ import { transparentize } from "polished"
 
 import { theme, mixins } from "../styles"
 
-const { palette } = theme
+const { palette, space } = theme
 
 const Navigation = styled.nav`
+  padding-left: ${space.small};
+
   > .active-link {
     color: ${palette.blue};
 
@@ -16,7 +18,7 @@ const Navigation = styled.nav`
       content: "";
       position: absolute;
       top: 50%;
-      left: -10px;
+      left: -${space.medium};
 
       background-color: ${transparentize(0.5, palette.blue)};
       border: 1px solid ${palette.blue};

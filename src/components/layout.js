@@ -58,7 +58,7 @@ const Root = styled.div`
     grid-area: content;
     > header {
       ${mixins.flexColCenter};
-      margin-bottom: ${remcalc("100px")};
+      margin: ${space.large} 0 ${remcalc("100px")};
     }
 
     padding: ${space.small} ${space.xxxLarge};
