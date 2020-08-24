@@ -2,7 +2,7 @@ module.exports = {
   title: "Stanley Liu | Software Engineer",
   description:
     "Stanley Liu is a software engineer focusing on designing and building exceptional web applications",
-  url: "", // TODO
+  url: "https://stanliu.netlify.app",
   image: "src/images/logo.png",
   imageWidth: 0,
   imageHeight: 0,
