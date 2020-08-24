@@ -44,12 +44,14 @@ export const CloseButton = styled.button`
   background-color: ${palette.black};
 `
 
+const container = typeof document !== "undefined" ? document.body : null
+
 const Modal = ({ open = false, onClose = event => undefined, children }) => {
   const modalRef = useRef(null)
 
   useEffect(() => {
     // disable scrolling when modal is open
-    document.body.style.overflow = open ? "hidden" : "unset"
+    container.style.overflow = open ? "hidden" : "unset"
   }, [open])
 
   const handleBackDropClick = event => {
@@ -58,21 +60,25 @@ const Modal = ({ open = false, onClose = event => undefined, children }) => {
   }
   const handleCloseClick = event => onClose(event)
 
-  return createPortal(
-    <Background open={open} onClick={handleBackDropClick}>
-      {open && (
-        <>
-          <CloseButton onClick={handleCloseClick}>
-            <CloseIcon size={20} />
-          </CloseButton>
-          <Wrapper ref={modalRef}>
-            <ModalBody>{children}</ModalBody>
-          </Wrapper>
-        </>
-      )}
-    </Background>,
-    document.body
-  )
+  if (container) {
+    return createPortal(
+      <Background open={open} onClick={handleBackDropClick}>
+        {open && (
+          <>
+            <CloseButton onClick={handleCloseClick}>
+              <CloseIcon size={20} />
+            </CloseButton>
+            <Wrapper ref={modalRef}>
+              <ModalBody>{children}</ModalBody>
+            </Wrapper>
+          </>
+        )}
+      </Background>,
+      container
+    )
+  }
+
+  return null
 }
 
 export default Modal
