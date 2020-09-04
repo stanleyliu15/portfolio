@@ -4,7 +4,7 @@ date: "2019"
 technologies:
   - "React Native"
   - "TypeScript"
-external: ""
+url: "https://play.google.com/store/apps/details?id=com.upnextbus&hl=en_US"
 github: "https://github.com/stanleyliu15/upnextbus"
 images:
   - "../../images/projects/upnextbus/upnextbus-1.png"
