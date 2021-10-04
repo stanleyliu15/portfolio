@@ -14,9 +14,9 @@ const Socials = styled.div`
 
 const RightSideBar = () => (
   <aside>
-    <StyledLink rel="noreferrer noopener" target="_blank" href="/resume.pdf">
+    {/* <StyledLink rel="noreferrer noopener" target="_blank" href="/resume.pdf">
       Resume
-    </StyledLink>
+    </StyledLink> */}
     <Socials>
       <StyledLink
         rel="noreferrer noopener"
@@ -25,13 +25,13 @@ const RightSideBar = () => (
       >
         Github
       </StyledLink>
-      <StyledLink
+      {/* <StyledLink
         rel="noreferrer noopener"
         target="_blank"
         href={`https://www.linkedin.com/in/${config.linkedin}`}
       >
         Linkedin
-      </StyledLink>
+      </StyledLink> */}
     </Socials>
     <StyledLink rel="noreferrer noopener" target="_blank" href={`mailto:${config.email}`}>
       Contact
