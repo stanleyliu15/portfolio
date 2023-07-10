@@ -1,15 +1,15 @@
 ---
 title: "trashposters"
-date: "2018"
+date: "Mar2018 - May2018"
 technologies:
   - "django"
   - "mySQL"
   - "AWS"
 github: "https://github.com/stanleyliu15/trashposters"
+order: 6
 ---
 
-A place where people can view and report environmental issues
+A place where people can view and report environmental issues in their community and see responses from City Officals.
 
-- browse and search environmental issues around your community
-- register and post environmental issues
-- stay informed and see what city officials are doing about the issues
+- Worked in a team, focusing primarily on frontend to building out the user interface.
+- Used django to render html using template engine, forms, and url routes.

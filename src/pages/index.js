@@ -6,10 +6,13 @@ import Container from "../components/Container"
 const IndexPage = () => (
   <Layout>
     <Container>
-      <p>Software engineer with a passion for building websites and applications</p>
       <p>
-        I focus primarily on building elegant user interfaces that are usable and scalable for any
-        web-based platform
+        Software engineer with a passion for building robust websites and applications using the
+        MERN Stack and React Native for mobile development.
+      </p>
+      <p>
+        I also enjoy learning about new technologies and advancements in Cloud Technologies, Data
+        Analytics, Data Engineering, System Design, AI and Machine Learning
       </p>
     </Container>
   </Layout>

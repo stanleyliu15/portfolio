@@ -121,7 +121,7 @@ const ProjectsPage = () => {
           {projects.edges.map((edge, index) => {
             const { node } = edge
             const { frontmatter, html } = node
-            const { title, date, technologies, url, github, images } = frontmatter
+            const { title, date, technologies, url, github, images, order } = frontmatter
 
             return (
               <Project key={title}>
@@ -172,7 +172,7 @@ const query = graphql`
   {
     projects: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/projects/" } }
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { fields: [frontmatter___order], order: ASC }
     ) {
       edges {
         node {
@@ -189,6 +189,7 @@ const query = graphql`
                 }
               }
             }
+            order
           }
           html
         }

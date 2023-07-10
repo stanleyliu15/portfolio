@@ -25,6 +25,13 @@ const RightSideBar = () => (
       >
         Github
       </StyledLink>
+      <StyledLink
+        rel="noreferrer noopener"
+        target="_blank"
+        href={`https://www.linkedin.com/in/${config.linkedin}`}
+      >
+        Linkedin
+      </StyledLink>
       {/* <StyledLink
         rel="noreferrer noopener"
         target="_blank"
