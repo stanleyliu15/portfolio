@@ -59,7 +59,7 @@ const theme = {
     bunker: "#1e2733",
     selection: "#d3d3d3",
   },
-  transition: "all 0.5s cubic-bezier(0.625, 0.050, 0.360, 1)",
+  transition: "all 0.3s cubic-bezier(0.625, 0.050, 0.360, 1)",
 }
 
 export default theme

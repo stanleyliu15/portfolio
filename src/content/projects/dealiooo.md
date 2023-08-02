@@ -1,6 +1,6 @@
 ---
 title: "dealiooo"
-date: "Oct18 - Mar2019"
+date: "Oct18 - Mar2020"
 technologies:
   - "React.js"
   - "Node.js"
